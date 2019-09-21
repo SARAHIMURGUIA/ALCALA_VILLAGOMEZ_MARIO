@@ -1,0 +1,54 @@
+\documentclass[letter,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Mario Alcala}
+\title{Rotaci\'on y Cuaternios}
+
+\begin{document}
+\maketitle
+
+ \textbf{La rotacion y cuaternios} se divide dos partes:
+ 
+Primero se discuten los resultados sobresalientes con rotaciones en tres
+dimensiones, especificamente el teorema de Euler, este se demostra utilizando algebra lineal, y la formula de Rodrigues. En la formula de Rodrigues, se discute su derivacion ademas de la relacion que tiene con matrices de rotacion ya 
+conocidas en la teora de rotaciones.
+
+En la segunda parte tomamos la relacion entre rotaciones en el
+espacio tridimensional y los cuaternios. En esta parte se revisa la relacion en entre la formula de Rodrigues y las rotaciones mediante cuaternios.\\
+
+\textbf{Euler, Rodriguez y Rotacion R\emph{3}}\\
+
+
+\textbf{Euler} conocido como la identidad de los cuatro cuadrados, dice que el producto de dos
+numeros, cada uno es una suma de cuatro cuadrados, y es una
+suma de cuatro cuadrados.
+
+El teorema de \textbf{Euler}.Nos asegura que toda rotacion por un cierto angulo en cualquier espacio deja una linea recta que es el eje de rotacion.
+(\textbf{Euler}) Si \textbf{R} es una matriz que representa una rotacion en \textbf{R}\textit{3}, entonces \textbf{R} tiene un vector propio \textbf{n} \textit{E} \textbf{R}\textit{3} tal que
+\textbf{Rn} = \textbf{n},
+
+\includegraphics[width=5cm]{../../Documents/7A/Cinematica de robots/cuatermios/Captura.JPG}
+
+Figura captura: Derivacion de la matriz de rotacion en \textbf{R}\textit{3} alrededor de un eje unitario \textbf{n} por un angulo.\\
+
+La formula de Rodrigues.
+"Sea v un vector cualquiera en R3. Si \textbf{v}rot es el vector que se obtiene al rotar el
+vector \textbf{v} alrededor del vector unitario \textbf{n} 2 \textbf{R}\textit{3} por un angulo" , la formula
+de Rodrigues nos da las coordenadas de este vector:\\
+
+\begin{center}
+vrot = cos v + sen  (n x v) + (1 -cos a) \<n,v>n,
+\end{center}
+
+\includegraphics[width=5cm]{../../Documents/7A/Cinematica de robots/cuatermios/Rodriguez.JPG} 
+En el sistema O'UVW está trasladado un vector p(6,-3,8) con respeto del sistema OXYZ. Calcular las coordenadas (rx , ry ,rz) del vector r cuyas coordenadas con respecto al sistema O'UVW son ruvw(-2,7,3) 8\\
+\includegraphics[width=5cm]{../../Documents/7A/Cinematica de robots/cuatermios/matriz.JPG} \\
+\includegraphics[width=5cm]{../../Documents/7A/Cinematica de robots/cuatermios/Plano.JPG} 
+
+
+
+\end{document}
